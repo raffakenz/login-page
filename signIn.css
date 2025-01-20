@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #07575b;
+}
+
+.wrapper {
+    background-color: white;
+    border-radius: 16px;
+    width: 30%;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(79, 109, 255);
+}
+
+p {
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+
+input {
+    border: none;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 16px;
+    border: 1px solid rgb(79, 109, 255);
+    margin-bottom: 1rem;
+    height: 50px;
+}
+
+button, #btnlogin {
+    border: 2px solid rgb(79, 109, 255);
+    background-color: rgb(79, 109, 255);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all;
+}
+
+#btnregister:hover {
+    background-color: transparent;
+    color: rgb(79, 109, 255);
+    border: 2px solid rgb(79, 109, 255);
+    transition: .2s ease-in-out;
+}
+
+#btnlogin {
+    margin-top: 8px;
+    background-color: transparent;
+    color: rgb(79, 109, 255);
+}
+
+#btnlogin:hover {
+    background-color: rgb(79, 109, 255);
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    input, button, #btnlogin {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .labelingat {
+        font-size: 12px;
+    }
+}
